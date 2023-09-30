@@ -11,9 +11,8 @@ sources:
       - name: customers
       - name: orders  
         description: :Uma linha por pedido, Inclui pedidos cancelados e deletados.
-        colums:
-            - name:
-              order_id
+        columns:
+            - name: order_id
               tests:
                 - unique
                 - not_null
