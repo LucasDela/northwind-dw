@@ -9,4 +9,14 @@ sources:
       - name: categories
       - name: suppliers
       - name: customers
+      - name: orders  
+        description: :Uma linha por pedido, Inclui pedidos cancelados e deletados.
+        colums:
+            - name:
+              order_id
+              tests:
+                - unique
+                - not_null
+      - name: order_details
       
+              
