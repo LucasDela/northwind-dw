@@ -1,7 +1,7 @@
 with
     fonte_clientes as (
         select
-            cast(customer_id as string) id_cliente
+            cast(customer_id as string) as id_cliente
             , cast(contact_name as string) as nome_cliente
             --, contact_title
             , cast(company_name as string) as empresa_cliente
