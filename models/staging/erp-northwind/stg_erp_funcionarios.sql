@@ -1,6 +1,6 @@
 with
     fonte_funcionarios as (
-        select cast (employee_id as string) as id_funcionario
+        select cast (employee_id as int) as id_funcionario
             , cast(last_name as string) as ultimo_nome_funcionario
             , cast(first_name as string) as primeiro_nome_funcionario
             , cast(title as string) as cargo_funcionario
