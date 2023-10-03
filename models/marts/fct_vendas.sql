@@ -103,6 +103,7 @@ with
             *
             , preco_da_unidade * quantidade as total_bruto
             , (1 - desconto_perc) * preco_da_unidade * quantidade as total_liquido
+            , (preco_da_unidade * quantidade) - ((1 - desconto_perc) * preco_da_unidade * quantidade) as total_desconto
             , case
                 when desconto_perc > 0 then true
                 when desconto_perc = 0 then false
